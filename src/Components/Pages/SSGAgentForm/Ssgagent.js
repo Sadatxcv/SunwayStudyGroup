@@ -17,6 +17,7 @@ export default function Ssgagent() {
             herotitle="cat"
             imgsrc="https://c0.wallpaperflare.com/preview/534/41/125/school-books-young-adult-education.jpg"
             imgalt="yo sup?"
+            btnlink="/products"
           />
         </div>
         <span className="top-sec">
