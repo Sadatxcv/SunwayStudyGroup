@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import  {Button} from '../../Button/Button'
 import Dropdown from '../../Dropdown/Dropdown';
+
 // import TextScroller from "./TextScroller";
 
 function Navbar() {
@@ -66,7 +67,7 @@ function Navbar() {
           
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/Home' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 Services
               </Link>
             </li>
@@ -109,7 +110,7 @@ function Navbar() {
             <li className='nav-item'
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}>
-              <Link to='/Home' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 SoftSkills <i className='fas fa-caret-down' />
               </Link>
               {dropdown && <Dropdown />}
@@ -136,7 +137,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SignIn</Button>}
+          {button && <Button buttonStyle='btn--outline' buttonLink="/Login">SignIn</Button>}
         </div>
       </nav>
     </>

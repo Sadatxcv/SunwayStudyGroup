@@ -9,6 +9,7 @@ import Scholarship from './Components/Pages/Scholarship/Scholarship';
 import University from './Components/Pages/University/University';
 import Blog from './Components/Pages/Blog/Blog';
 import ApplyScholarship from './Components/Pages/ApplyScholarship/ApplyScholarship';
+import Login from './Components/Pages/Login/Login'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path= '/University' component={University}/>
           <Route path= '/Blog' component={Blog}/>
           <Route path= '/Scholarship' component={ApplyScholarship}/>
+          <Route Path= '/Login' component={Login}/>
         </Switch>
         <Footer/>
       </Router>

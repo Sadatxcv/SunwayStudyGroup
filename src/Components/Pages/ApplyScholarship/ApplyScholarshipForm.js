@@ -1,10 +1,9 @@
 import React from "react";
 import validate from "./validateinfo";
 import useForm from "./useForm";
-import "./useForm";
 import "./ScholarshipForm.css";
 
-const Applyagent = ({ submitForm }) => {
+const ApplyScholarshipForm = ({ submitForm }) => {
   const { handleChange, handleSubmit, values, error } = useForm(
     submitForm,
     validate
@@ -428,4 +427,4 @@ const Applyagent = ({ submitForm }) => {
     </div>
   );
 };
-export default Applyagent;
+export default ApplyScholarshipForm;

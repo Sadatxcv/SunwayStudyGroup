@@ -17,7 +17,7 @@ export default function Ssgagent() {
             herotitle="cat"
             imgsrc="https://c0.wallpaperflare.com/preview/534/41/125/school-books-young-adult-education.jpg"
             imgalt="yo sup?"
-            btnlink="/products"
+            btnlink="" //input link here to redirect to a page
           />
         </div>
         <span className="top-sec">
@@ -71,7 +71,7 @@ export default function Ssgagent() {
       <div className="agentformlabel">
         <h1>Growing With Sunway Study Group</h1>
       </div>
-      <section className="form-container">
+      <section id="form" className="form-container">
         <div className="agent">
           <h1>Individual Agent</h1>
           <h2>Who is Individual Agent?</h2>
