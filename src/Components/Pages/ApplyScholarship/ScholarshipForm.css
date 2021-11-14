@@ -11,11 +11,11 @@
 }
 .form-container-schlr {
   margin: 100px auto;
-  width: 30%;
+  width: 90%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .form-success-schlr {
@@ -28,7 +28,7 @@
 }
 
 .form-content-schlr {
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 0px 0px 0px 0px;
   position: relative;
   background: linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(17, 17, 17) 100%);
 }
@@ -116,6 +116,66 @@
   color: white;
   transition: all 0.4s ease-out;
 }
+.list-left{
+  position: relative;
+  padding: 2rem;
+  text-align: justify;
+  background-color: antiquewhite;
+}
+.list-left h1{
+  padding-bottom: 3rem;
+  font-size: 40px;
+}
+
+.list-left li{
+  padding: 15px;
+}
+
+.list-right{
+  position: relative;
+  padding: 2rem;
+  text-align: justify;
+  background-color: antiquewhite;
+}
+.list-right h1 {
+  padding-bottom: 3rem;
+  font-size: 40px;
+}
+.list-right li{
+  padding: 15px;
+}
+.top-sec-schlr{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: 80%;
+  padding-bottom: 5rem;
+}
+.top-sec-schlr h1{
+  color: rgb(100, 66, 196);
+  font-size: 30px;
+  padding: 2rem;
+}
+.top-sec-schlr p {
+  text-align: justify;
+}
+ .bottom-sec-schlr{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: 80%;
+  padding-bottom: 5rem;
+ }
+ .bottom-sec-schlr p{
+   text-align: justify;
+ }
+ .bottom-sec-schlr h1{
+  color: rgb(100, 66, 196);
+  font-size: 30px;
+  padding: 2rem;
+ }
 
 @media screen and (max-width: 900px) {
   .form-content-schlr {
