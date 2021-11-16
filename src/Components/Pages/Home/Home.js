@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       <HeroSection
-      src='./video-2.mp4'
+      videosrc='video/video-2.mp4'
       herotitle='Win The Best'/>
       <Cards/>
       

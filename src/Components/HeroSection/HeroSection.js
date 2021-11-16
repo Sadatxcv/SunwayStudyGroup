@@ -8,7 +8,7 @@ function HeroSection(props) {
     <>
       <div className="hero-container">
         <video className="video" src={props.videosrc} autoPlay loop muted />
-        <img src={props.imgsrc} alt={props.imgalt} />
+        <img src={props.imgsrc} alt={props.imgsrc} />
         <h1>{props.herotitle}</h1>
 
         <div className="hero-btns">

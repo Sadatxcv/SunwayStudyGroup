@@ -2,31 +2,47 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import  {Button} from '../../Button/Button'
-import Dropdown from '../../Dropdown/Dropdown';
+import SoftSkillDropDown from '../../Dropdown/SoftSkillDropDown';
+import ApplyDropdown from '../../Dropdown/ApplyDropDown';
 
 // import TextScroller from "./TextScroller";
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
-  const [dropdown, setDropdown] = useState(false);
+  const [applyDropdown, setApplyDropdown] = useState(false);
+  const [softSkilldropdown, setSoftSkillDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const onMouseEnter = () => {
+  const applyOnMouseEnter = () => {
     if (window.innerWidth < 960) {
-      setDropdown(false);
+      setApplyDropdown(false);
     } else {
-      setDropdown(true);
+      setApplyDropdown(true);
+    }
+  };
+  const softSkillOnMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setSoftSkillDropdown(false);
+    } else {
+      setSoftSkillDropdown(true);
     }
   };
 
-  const onMouseLeave = () => {
+  const applyOnMouseLeave = () => {
     if (window.innerWidth < 960) {
-      setDropdown(false);
+      setApplyDropdown(false);
     } else {
-      setDropdown(false);
+      setApplyDropdown(false);
+    }
+  };
+  const softSKillOnMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setSoftSkillDropdown(false);
+    } else {
+      setSoftSkillDropdown(false);
     }
   };
 
@@ -55,7 +71,7 @@ function Navbar() {
           <ul>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
               
-              <img className='logo' src="src\Components\Header\Navbar\Img\logo.jpg" alt='logo'/>
+              <img className='logo' src="/img\logo.jpg" alt='logo'/>
             </Link>
           </ul>
           <ul>
@@ -108,12 +124,12 @@ function Navbar() {
               </Link>
             </li>
             <li className='nav-item'
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}>
+              onMouseEnter={softSkillOnMouseEnter}
+              onMouseLeave={softSKillOnMouseLeave}>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 SoftSkills <i className='fas fa-caret-down' />
               </Link>
-              {dropdown && <Dropdown />}
+              {softSkilldropdown && <SoftSkillDropDown />}
             </li>
             <li className='nav-item'>
               <Link
@@ -125,8 +141,8 @@ function Navbar() {
               </Link>
             </li>
             <li className='nav-item'
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}
+              onMouseEnter={applyOnMouseEnter}
+              onMouseLeave={applyOnMouseLeave}
             >
               <Link
                 to='/products'
@@ -135,6 +151,7 @@ function Navbar() {
               >
                 Apply <i className='fas fa-caret-down' />
               </Link>
+              {applyDropdown && <ApplyDropdown />}
             </li>
           </ul>
           {button && <Button buttonStyle='btn--outline' buttonLink="/Login">SignIn</Button>}

@@ -7,8 +7,8 @@ function Blog() {
   return (
     <>
         <HeroSection
-            videosrc='../Home/video-2.mp4'
-            herotitle='Blog Page'
+            imgsrc='img/blog.jpg'
+            // herotitle='Blog Page'
         />
       
     </>

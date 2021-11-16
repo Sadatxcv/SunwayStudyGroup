@@ -186,6 +186,13 @@
   padding-bottom: 20px;
   padding-top: 30px;
 }
+.buttonContainer{
+  /* padding-top: 200px; */
+  background: #fff;
+  margin-left: 3rem;
+  margin-right: 3rem;
+
+}
 @media screen and (max-width: 900px) {
   .form-content {
     width: 100%;

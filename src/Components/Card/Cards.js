@@ -21,30 +21,33 @@ function Cards() {
           <div className='cards__wrapper'>
             <ul className='cards__items'>
               <CardItem
-                src='images/skill.jpg'
-                text='We offer a lot useful soft skill courses which makes a students life a lot easier in foreign countries'
+                src='img/fs 14.jpg'
+                text='Most of the students applying for further education abroad can not go through the right way to
+                success. It’s a crucial point. Our counseling for the right country and University choice.'
                 label='Student Counceling'
                 path='/services'
               />
               <CardItem
-                src='images/scholarship.jpg'
-                text='Get huge amount of scholarsips from all our affiliated universities all over the world.'
+                src='img/fs 10.jpg'
+                text='Admission application is most important part for a student aspiring for further education
+                considering this a first introduction to the University authority. Our councilor helps student to
+                make it properly and send it to the university.'
                 
-                label='Application Process'
+                label='Application Processing'
                 path='/services'
               />
               
             </ul>
             <ul className='cards__items'>
               <CardItem
-                src='images/visa.jpg'
+                src='img/visa.jpg'
                 text='We guide you to fill up the visa application form as per requirement of different countries 
                   and getting your documents ready for submission .'
                 label='Visa Application'
                 path='/sign-up'
               />
               <CardItem
-                src='images/eduProgram.jpg'
+                src='img/fs 17.jpg'
                 text='We are sending students abroad on multiple education programs'
                 label='Education Program'
                 path='/services'
@@ -60,47 +63,42 @@ function Cards() {
           <div className='cards__wrapper'>
             <ul className='cards__items'>
               <CardItem
-                src='images/skill.jpg'
-                text='We offer a lot useful soft skill courses which makes a students life a lot easier in foreign countries'
-                label='Student Counceling'
+                src='img/fs 11.jpg'
+                text='There are multiple Bachelors program in multiple universities we are getting our students admitted in'
+                label='Undergaduation Program'
                 path='/services'
               />
               <CardItem
-                src='images/scholarship.jpg'
+                src='img/scholarship.jpg'
                 text='Get huge amount of scholarsips from all our affiliated universities all over the world.'
                 
-                label='Application Process'
+                label='Post Graduation Program'
                 path='/services'
               /> 
-              <CardItem
-                src='images/scholarship.jpg'
-                text='Get huge amount of scholarsips from all our affiliated universities all over the world.'
-                
-                label='Application Process'
-                path='/services'
-              /> 
+              
             </ul>
             <ul className='cards__items'>
+            <CardItem
+                src='img/phd.jpg'
+                text='Get huge amount of scholarsips from all our affiliated universities all over the world.'
+                
+                label='Phd'
+                path='/services'
+              /> 
               <CardItem
-                src='images/skill.jpg'
+                src='img/diploma.jpg'
                 text='We offer a lot useful soft skill courses which makes a students life a lot easier in foreign countries'
-                label='Student Counceling'
+                label='Diploma'
                 path='/services'
               />
               <CardItem
-                src='images/scholarship.jpg'
+                src='img/mbbs.jpg'
                 text='Get huge amount of scholarsips from all our affiliated universities all over the world.'
                 
-                label='Application Process'
+                label='MBBS'
                 path='/services'
               /> 
-              <CardItem
-                src='images/scholarship.jpg'
-                text='Get huge amount of scholarsips from all our affiliated universities all over the world.'
-                
-                label='Application Process'
-                path='/services'
-              /> 
+              
               
             </ul>
             

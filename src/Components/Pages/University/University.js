@@ -9,10 +9,11 @@ function University() {
   return (
     <>
         <HeroSection
-            videosrc='../Home/video-2.mp4'
+            imgsrc='img/home.jpg'
             herotitle='Lists of Universities'
         />
-        <div className='cards'>
+        
+        {/* <div className='cards'>
         <h1 className='orangeheader'>
             <i class="fas fa-info-circle"></i> About Us 
         </h1>
@@ -136,7 +137,7 @@ function University() {
           
         </div>
       </div>
-      
+       */}
     </>
   );
 }

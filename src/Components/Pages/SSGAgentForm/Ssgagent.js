@@ -3,6 +3,7 @@ import Applyagent from "./Applyagent";
 import FormSuccess from "./FormSuccess";
 import "./AgentForm.css";
 import HeroSection from "../../HeroSection/HeroSection";
+import { Button } from "../../Button/Button";
 export default function Ssgagent() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -14,12 +15,19 @@ export default function Ssgagent() {
       <section>
         <div>
           <HeroSection
-            herotitle="cat"
+            herotitle="Be Our Global Partner"
             imgsrc="https://c0.wallpaperflare.com/preview/534/41/125/school-books-young-adult-education.jpg"
-            imgalt="yo sup?"
-            btnlink="" //input link here to redirect to a page
+            imgalt="hero image"
+            btnlink='/Home' //input link here to redirect to a page
           />
+          
         </div>
+        <h1 className='Card'> 
+          <h1 className='buttonContainer'>
+            {<Button buttonStyle='btn--inCard' buttonLink="/Login"> <i class="fas fa-search"></i> Search Agent</Button>}
+          </h1>
+         
+        </h1>
         <span className="top-sec">
           <div className="text1">
             <h1>Why Join Us?</h1>

@@ -75,7 +75,7 @@ const Applyagent = ({ submitForm }) => {
             onChange={handleChange}
           >
             <option value="individualagent">Individual Agent</option>
-            <option value="personalagent">Personal Agent</option>
+            <option value="personalagent">Business Agent</option>
           </select>
         </div>
         <div className="form-inputs">
