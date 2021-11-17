@@ -18,11 +18,9 @@
 }
 .form-container-application {
   margin: 100px auto;
-  width: 30%;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  width: 60%;
   border-radius: 10px;
   display: grid;
-  grid-template-columns: 1fr;
 }
 
 .form-success-application {
@@ -40,6 +38,11 @@
   background: linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(17, 17, 17) 100%);
 }
 
+.formdata{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .form-application {
   position: relative;
   top: 50%;
@@ -56,16 +59,24 @@
 }
 
 .form-application h1 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
-  width: 80%;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.formdata h1 {
+  font-size: 1rem;
+  text-align: justify;
+  width: 100%;
   margin-bottom: 1rem;
   color: #fff;
 }
 
 .form-inputs-application {
   margin-bottom: 0.5rem;
-  width: 100%;
+  width: 90%;
 }
 
 .form-inputs-application p {
@@ -137,5 +148,9 @@
   }
   .form-input-apply-application {
     width: 90%;
+  }
+  .formdata{
+    display:grid;
+    grid-template-columns: 1fr;
   }
 }

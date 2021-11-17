@@ -12,10 +12,13 @@ const ApplicationForm = ({ submitForm }) => {
   return (
     <div className="form-content-application">
       <form className="form-application" onSubmit={handleSubmit}>
-        <h1>Fill out the login information to Sign in.</h1>
-
+        <h1>Fill out the required information for applying for a degree.</h1>
+        <div className="formdata" >
+        <div>
         <div className="form-inputs-application">
-          <label htmlFor="photo" className="form-label-application">Upload your passport-sized photo.</label>
+          <label htmlFor="photo" className="form-label-application">
+            Upload your passport-sized photo.*
+          </label>
           <input
             id="photo"
             type="file"
@@ -59,19 +62,19 @@ const ApplicationForm = ({ submitForm }) => {
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="passportExpireDate" className="form-label-application">
             Passport Expire Date
           </label>
           <input
-            id="passportno"
-            type="text"
-            name="passportno"
+            id="passportExpireDate"
+            type="date"
+            name="passportExpireDate"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.passportExpireDate}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
+          {error.passportExpireDate && <p>{error.passportExpireDate}</p>}
         </div>
 
         <div className="form-inputs-application">
@@ -91,170 +94,188 @@ const ApplicationForm = ({ submitForm }) => {
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="religion" className="form-label-application">
             Religion
           </label>
           <input
-            id="passportno"
+            id="religion"
             type="text"
-            name="passportno"
+            name="religion"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.religion}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
+          {error.religion && <p>{error.religion}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
-            Sex
-          </label>
-          <input
-            id="passportno"
-            type="text"
-            name="passportno"
-            className="form-input-application"
-            placeholder=""
-            value={values.passportno}
-            onChange={handleChange}
-          />
-          {error.passportno && <p>{error.passportno}</p>}
-        </div>
-
-        <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
-            Date of Birth
-          </label>
-          <input
-            id="passportno"
-            type="text"
-            name="passportno"
-            className="form-input-application"
-            placeholder=""
-            value={values.passportno}
-            onChange={handleChange}
-          />
-          {error.passportno && <p>{error.passportno}</p>}
-        </div>
-
-        <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
-            Place of Birth
-          </label>
-          <input
-            id="passportno"
-            type="text"
-            name="passportno"
-            className="form-input-application"
-            placeholder=""
-            value={values.passportno}
-            onChange={handleChange}
-          />
-          {error.passportno && <p>{error.passportno}</p>}
-        </div>
-
-        <div className="form-inputs-application">
-          <label htmlFor="group" className="form-label-application">
-            Marital Status
+          <label htmlFor="gender" className="form-label-application">
+            Gender
           </label>
           <select
-            id="group"
+            id="gender"
             type="text"
-            name="group"
+            name="gender"
             className="form-input-application"
-            value={values.loginType}
+            value={values.logigender}
             onChange={handleChange}
           >
             <option value=""></option>
-            <option value="Admin">Admin</option>
-            <option value="Agent">Agent</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
           </select>
-          {error.group && <p>{error.group}</p>}
+          {error.gender && <p>{error.gender}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="dateofbirth" className="form-label-application">
+            Date of Birth
+          </label>
+          <input
+            id="dateofbirth"
+            type="date"
+            name="dateofbirth"
+            className="form-input-application"
+            placeholder=""
+            value={values.dateofbirth}
+            onChange={handleChange}
+          />
+          {error.dateofbirth && <p>{error.dateofbirth}</p>}
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="placeofbirth" className="form-label-application">
+            Place of Birth
+          </label>
+          <input
+            id="placeofbirth"
+            type="text"
+            name="placeofbirth"
+            className="form-input-application"
+            placeholder=""
+            value={values.placeofbirth}
+            onChange={handleChange}
+          />
+          {error.placeofbirth && <p>{error.placeofbirth}</p>}
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="maritalstatus" className="form-label-application">
+            Marital Status
+          </label>
+          <select
+            id="maritalstatus"
+            type="text"
+            name="maritalstatus"
+            className="form-input-application"
+            value={values.logimaritalstatus}
+            onChange={handleChange}
+          >
+            <option value=""></option>
+            <option value="married">Married</option>
+            <option value="single">Single</option>
+          </select>
+          {error.maritalstatus && <p>{error.maritalstatus}</p>}
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="email" className="form-label-application">
             Applicant Email
           </label>
           <input
-            id="passportno"
-            type="text"
-            name="passportno"
+            id="email"
+            type="email"
+            name="email"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.email}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
+          {error.email && <p>{error.email}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="phoneno" className="form-label-application">
             Applicant Phone
           </label>
           <input
-            id="passportno"
+            id="phoneno"
             type="text"
-            name="passportno"
+            name="phoneno"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.phoneno}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
+          {error.phoneno && <p>{error.phoneno}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="homeaddress" className="form-label-application">
             Homeland Address
           </label>
           <input
-            id="passportno"
+            id="homeaddress"
             type="text"
-            name="passportno"
+            name="homeaddress"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.homeaddress}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
+          {error.homeaddress && <p>{error.homeaddress}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="homephone" className="form-label-application">
             Home Phone Number
           </label>
           <input
-            id="passportno"
+            id="homephone"
             type="text"
-            name="passportno"
+            name="homephone"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.homephone}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="applyuniveristy" className="form-label-application">
+            Apply University
+          </label>
+          <input
+            id="applyuniveristy"
+            type="text"
+            name="applyuniveristy"
+            className="form-input-application"
+            placeholder=""
+            value={values.applyuniveristy}
+            onChange={handleChange}
+          />
+          {error.applyuniveristy && <p>{error.applyuniveristy}</p>}
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="majorsub" className="form-label-application">
             Major Subject
           </label>
           <input
-            id="passportno"
+            id="majorsub"
             type="text"
-            name="passportno"
+            name="majorsub"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.majorsub}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
+          {error.majorsub && <p>{error.majorsub}</p>}
         </div>
 
         <h1>
-          _____________________________________________
+        _________________________________
           <br />
           <br />
           Educational Background
@@ -262,268 +283,530 @@ const ApplicationForm = ({ submitForm }) => {
 
         <h2>Educational History 1:</h2>
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="institutename" className="form-label-application">
             Institute Name
           </label>
           <input
-            id="passportno"
+            id="institutename"
             type="text"
-            name="passportno"
+            name="institutename"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.institutename}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
+          {error.institutename && <p>{error.institutename}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="fieldofstudy" className="form-label-application">
             Field/Program of study
           </label>
           <input
-            id="passportno"
+            id="fieldofstudy"
             type="text"
-            name="passportno"
+            name="fieldofstudy"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.fieldofstudy}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
+          {error.fieldofstudy && <p>{error.fieldofstudy}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="startdate" className="form-label-application">
             From:
           </label>
           <input
-            id="passportno"
-            type="text"
-            name="passportno"
+            id="startdate"
+            type="date"
+            name="startdate"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.startdate}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
+          {error.startdate && <p>{error.startdate}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="enddate" className="form-label-application">
             To:
           </label>
           <input
-            id="passportno"
-            type="text"
-            name="passportno"
+            id="enddate"
+            type="date"
+            name="enddate"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.enddate}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
+          {error.enddate && <p>{error.enddate}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="cgpa" className="form-label-application">
             Obtained CGPA:
           </label>
           <input
-            id="passportno"
+            id="cgpa"
             type="text"
-            name="passportno"
+            name="cgpa"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.cgpa}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
+          {error.cgpa && <p>{error.cgpa}</p>}
         </div>
 
         <br />
         <br />
         <h2>Educational History 2:</h2>
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="institutename2" className="form-label-application">
             Institute Name
           </label>
           <input
-            id="passportno"
+            id="institutename2"
             type="text"
-            name="passportno"
+            name="institutename2"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.institutename2}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
+          {error.institutename2 && <p>{error.institutename2}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="fieldofstudy2" className="form-label-application">
             Field/Program of study
           </label>
           <input
-            id="passportno"
+            id="fieldofstudy2"
             type="text"
-            name="passportno"
+            name="fieldofstudy2"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.fieldofstudy2}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
+          {error.fieldofstudy2 && <p>{error.fieldofstudy2}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="startdate2" className="form-label-application">
             From:
           </label>
           <input
-            id="passportno"
-            type="text"
-            name="passportno"
+            id="startdate2"
+            type="date"
+            name="startdate2"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.startdate2}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
+          {error.startdate2 && <p>{error.startdate2}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="enddate2" className="form-label-application">
             To:
           </label>
           <input
-            id="passportno"
-            type="text"
-            name="passportno"
+            id="enddate2"
+            type="date"
+            name="enddate2"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.enddate2}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
+          {error.enddate2 && <p>{error.enddate2}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="passportno" className="form-label-application">
+          <label htmlFor="cgpa2" className="form-label-application">
             Obtained CGPA:
           </label>
           <input
-            id="passportno"
+            id="cgpa2"
             type="text"
-            name="passportno"
+            name="cgpa2"
             className="form-input-application"
             placeholder=""
-            value={values.passportno}
+            value={values.cgpa2}
             onChange={handleChange}
           />
-          {error.passportno && <p>{error.passportno}</p>}
+          {error.cgpa2 && <p>{error.cgpa2}</p>}
         </div>
-
+</div>
+<div>
         <h1>
-          _____________________________________________
+        _________________________________
           <br />
           <br />
           Personal Details
         </h1>
 
         <div className="form-inputs-application">
-          <label htmlFor="userPassword" className="form-label-application">
+          <label htmlFor="profession" className="form-label-application">
             Applicant Profession
           </label>
           <input
-            id="userPassword"
-            type="password"
-            name="userPassword"
+            id="profession"
+            type="text"
+            name="profession"
             className="form-input-application"
-            value={values.userPassword}
+            value={values.profession}
             onChange={handleChange}
           />
-          {error.userPassword && <p>{error.userPassword}</p>}
+          {error.profession && <p>{error.profession}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="userPassword" className="form-label-application">
+          <label htmlFor="language" className="form-label-application">
             Mother Language
           </label>
           <input
-            id="userPassword"
-            type="password"
-            name="userPassword"
+            id="language"
+            type="text"
+            name="language"
             className="form-input-application"
-            value={values.userPassword}
+            value={values.language}
             onChange={handleChange}
           />
-          {error.userPassword && <p>{error.userPassword}</p>}
+          {error.language && <p>{error.language}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="userPassword" className="form-label-application">
+          <label htmlFor="fathername" className="form-label-application">
             Fathers Name
           </label>
           <input
-            id="userPassword"
-            type="password"
-            name="userPassword"
+            id="fathername"
+            type="text"
+            name="fathername"
             className="form-input-application"
-            value={values.userPassword}
+            value={values.fathername}
             onChange={handleChange}
           />
-          {error.userPassword && <p>{error.userPassword}</p>}
+          {error.fathername && <p>{error.fathername}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="userPassword" className="form-label-application">
+          <label htmlFor="mothername" className="form-label-application">
             Mothers Name
           </label>
           <input
-            id="userPassword"
-            type="password"
-            name="userPassword"
+            id="mothername"
+            type="text"
+            name="mothername"
             className="form-input-application"
-            value={values.userPassword}
+            value={values.mothername}
             onChange={handleChange}
           />
-          {error.userPassword && <p>{error.userPassword}</p>}
+          {error.mothername && <p>{error.mothername}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="userPassword" className="form-label-application">
-            Fathers Age
+          <label htmlFor="fatherage" className="form-label-application">
+            Father's Age
           </label>
           <input
-            id="userPassword"
-            type="password"
-            name="userPassword"
+            id="fatherage"
+            type="text"
+            name="fatherage"
             className="form-input-application"
-            value={values.userPassword}
+            value={values.fatherage}
             onChange={handleChange}
           />
-          {error.userPassword && <p>{error.userPassword}</p>}
+          {error.fatherage && <p>{error.fatherage}</p>}
         </div>
 
         <div className="form-inputs-application">
-          <label htmlFor="userPassword" className="form-label-application">
-            Mothers Age
+          <label htmlFor="motherage" className="form-label-application">
+            Mother's Age
           </label>
           <input
-            id="userPassword"
-            type="password"
-            name="userPassword"
+            id="motherage"
+            type="text"
+            name="motherage"
             className="form-input-application"
-            value={values.userPassword}
+            value={values.motherage}
             onChange={handleChange}
           />
-          {error.userPassword && <p>{error.userPassword}</p>}
+          {error.motherage && <p>{error.motherage}</p>}
         </div>
 
+        <div className="form-inputs-application">
+          <label htmlFor="fatheremployement" className="form-label-application">
+            Father's Employment
+          </label>
+          <input
+            id="fatheremployement"
+            type="text"
+            name="fatheremployement"
+            className="form-input-application"
+            value={values.fatheremployement}
+            onChange={handleChange}
+          />
+          {error.fatheremployement && <p>{error.fatheremployement}</p>}
+        </div>
 
+        <div className="form-inputs-application">
+          <label htmlFor="motheremployement" className="form-label-application">
+            Mother's Employment
+          </label>
+          <input
+            id="motheremployement"
+            type="text"
+            name="motheremployement"
+            className="form-input-application"
+            value={values.motheremployement}
+            onChange={handleChange}
+          />
+          {error.motheremployement && <p>{error.motheremployement}</p>}
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="fathernumber" className="form-label-application">
+            Father's Mobile Number
+          </label>
+          <input
+            id="fathernumber"
+            type="text"
+            name="fathernumber"
+            className="form-input-application"
+            value={values.fathernumber}
+            onChange={handleChange}
+          />
+          {error.fathernumber && <p>{error.fathernumber}</p>}
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="mothernumber" className="form-label-application">
+            Mother's Mobile Number
+          </label>
+          <input
+            id="mothernumber"
+            type="text"
+            name="mothernumber"
+            className="form-input-application"
+            value={values.mothernumber}
+            onChange={handleChange}
+          />
+          {error.mothernumber && <p>{error.mothernumber}</p>}
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="wherehearaboutus" className="form-label-application">
+            Where did you hear about us?
+          </label>
+          <input
+            id="wherehearaboutus"
+            type="text"
+            name="wherehearaboutus"
+            className="form-input-application"
+            value={values.wherehearaboutus}
+            onChange={handleChange}
+          />
+        </div>
+        <h1>_________________________________</h1>
+        <div className="form-inputs-application">
+          <label htmlFor="passportscan" className="form-label-application">
+            Passport Scan Copy*
+          </label>
+          <input
+            id="passportscan"
+            type="file"
+            name="passportscan"
+            className="form-input-application"
+            value={values.passportscan}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="academiccertificate" className="form-label-application">
+            Last Academic Certificates*
+          </label>
+          <input
+            id="academiccertificate"
+            type="file"
+            name="academiccertificate"
+            className="form-input-application"
+            value={values.academiccertificate}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="transcript" className="form-label-application">
+            Last Transcripts 1*
+          </label>
+          <input
+            id="transcript"
+            type="file"
+            name="transcript"
+            className="form-input-application"
+            value={values.transcript}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="transcript2" className="form-label-application">
+            Last Transcripts 2 (if have)
+          </label>
+          <input
+            id="transcript2"
+            type="file"
+            name="transcript2"
+            className="form-input-application"
+            value={values.transcript2}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="policyclearance" className="form-label-application">
+            Policy Clearance (if have)
+          </label>
+          <input
+            id="policyclearance"
+            type="file"
+            name="policyclearance"
+            className="form-input-application"
+            value={values.policyclearance}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="bankstatement" className="form-label-application">
+            Bank Statement 1 (if have)
+          </label>
+          <input
+            id="bankstatement"
+            type="file"
+            name="bankstatement"
+            className="form-input-application"
+            value={values.bankstatement}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="bankstatement2" className="form-label-application">
+            Bank Statement 2 (if have)
+          </label>
+          <input
+            id="bankstatement2"
+            type="file"
+            name="bankstatement2"
+            className="form-input-application"
+            value={values.bankstatement2}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="englishprofeciencydoc" className="form-label-application">
+            English Proficiency Document (if have)
+          </label>
+          <input
+            id="englishprofeciencydoc"
+            type="file"
+            name="englishprofeciencydoc"
+            className="form-input-application"
+            value={values.englishprofeciencydoc}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="otherdoc" className="form-label-application">
+            Any Other Document (if have)
+          </label>
+          <input
+            id="otherdoc"
+            type="file"
+            name="otherdoc"
+            className="form-input-application"
+            value={values.otherdoc}
+            onChange={handleChange}
+          />
+        </div>
+        <h1>
+          _________________________________
+          <br />
+          <br />
+          ONLY FOR MASTERS & PhD 
+        </h1>
+        <div className="form-inputs-application">
+          <label htmlFor="recommendationletter" className="form-label-application">
+          Recommendation Letter
+          </label>
+          <input
+            id="recommendationletter"
+            type="file"
+            name="recommendationletter"
+            className="form-input-application"
+            value={values.recommendationletter}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="recommendationletter2" className="form-label-application">
+          Recommendation Letter 2
+          </label>
+          <input
+            id="recommendationletter2"
+            type="file"
+            name="recommendationlette2r"
+            className="form-input-application"
+            value={values.recommendationletter2}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="recommendationletter3" className="form-label-application">
+          Recommendation Letter 3
+          </label>
+          <input
+            id="recommendationletter3"
+            type="file"
+            name="recommendationletter3"
+            className="form-input-application"
+            value={values.recommendationletter3}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="form-inputs-application">
+          <label htmlFor="studyplan" className="form-label-application">
+          Study Plan / Research Proposal
+          </label>
+          <input
+            id="studyplan"
+            type="file"
+            name="studyplan"
+            className="form-input-application"
+            value={values.studyplan}
+            onChange={handleChange}
+          />
+        </div>
+        </div>
+        </div>
         <button className="form-input-apply-application" type="submit">
-          Sign in
+          Submit
         </button>
       </form>
     </div>
