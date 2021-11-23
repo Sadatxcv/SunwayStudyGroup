@@ -17,7 +17,7 @@ const ApplyScholarshipForm = ({ submitForm }) => {
           get back to you after evaluation.
         </h1>
         <div className="form-inputs-schlr">
-          <label htmlFor="name" className="form-label-schlr-schlr">
+          <label htmlFor="name" className="form-label-schlr">
             Name
           </label>
           <input
@@ -94,34 +94,39 @@ const ApplyScholarshipForm = ({ submitForm }) => {
           {error.englishProficiency && <p>{error.englishProficiency}</p>}
         </div>
         <div className="form-inputs-schlr">
-          <label htmlFor="bachelors" className="form-label-schlr">
-            Proposed Bachelor of Study:
+          <label htmlFor="levelofstudy" className="form-label-schlr">
+            Level of Study
           </label>
-          <input
-            id="bachelors"
-            type="text"
-            name="bachelors"
+          <select
+            id="levelofstudy"
+            type="levelofstudy"
+            name="levelofstudy"
             className="form-input-schlr"
-            placeholder="e.g. B.Sc in Computer Science"
-            value={values.bachelors}
+            value={values.levelofstudy}
             onChange={handleChange}
-          />
-          {error.bachelors && <p>{error.bachelors}</p>}
+          >
+            <option value=""></option>
+            <option value="Diploma">Diploma</option>
+            <option value="Bachelor's">Bachelor's</option>
+            <option value="Master's">Master's</option>
+            <option value="PHD">PHD</option>
+          </select>
+          {error.levelofstudy && <p>{error.levelofstudy}</p>}
         </div>
         <div className="form-inputs-schlr">
-          <label htmlFor="masters" className="form-label-schlr">
-            Proposed Masters of Study:
+          <label htmlFor="fieldofstudy" className="form-label-schlr">
+            Field of study
           </label>
           <input
-            id="masters"
+            id="fieldofstudy"
             type="text"
-            name="masters"
+            name="fieldofstudy"
             className="form-input-schlr"
-            placeholder="e.g. M.Sc of Science"
-            value={values.masters}
+            placeholder="e.g. Computer Science"
+            value={values.fieldofstudy}
             onChange={handleChange}
           />
-          {error.masters && <p>{error.masters}</p>}
+          {error.fieldofstudy && <p>{error.fieldofstudy}</p>}
         </div>
         <div className="form-inputs-schlr">
           <label htmlFor="avgGrade" className="form-label-schlr">

@@ -11,13 +11,11 @@ export default function validateinfo(values) {
   if (values.englishProficiency === "") {
     error.englishProficiency = "Value for English Proficiency required!";
   }
-  if (!values.bachelors.trim()) {
-    error.bachelors =
-      "Type N/A is you are applying for Masters, otherwise required.";
+  if (values.levelofstudy === "") {
+    error.levelofstudy = "Value for level required!";
   }
-  if (!values.masters.trim()) {
-    error.masters =
-      "Type N/A is you are applying for Bachelors, otherwise required.";
+  if (!values.fieldofstudy.trim()) {
+    error.fieldofstudy = "Name required!";
   }
   if (values.avgGrade === "") {
     error.avgGrade = "Average Grade Required!";

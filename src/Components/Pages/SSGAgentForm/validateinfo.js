@@ -10,11 +10,20 @@ export default function validateinfo(values) {
   if (!values.address.trim()) {
     error.address = "Address required!";
   }
-  if (values.nationality === "") {
-    error.nationality = "Nationality required!";
+  if (!values.postcode.trim()) {
+    error.postcode = "Postcode required!";
   }
-  if (values.dateofbirth === "") {
-    error.dateofbirth = "Date of birth required!";
+  if (!values.state.trim()) {
+    error.state = "State required!";
+  }
+  if (!values.area.trim()) {
+    error.area = "Area required!";
+  }
+  if (values.country === "") {
+    error.country = "Country required!";
+  }
+  if (values.whatsappno === "") {
+    error.whatsappno = "Whatsapp Number required!";
   }
   if (!values.email) {
     error.email = "Email Required!";

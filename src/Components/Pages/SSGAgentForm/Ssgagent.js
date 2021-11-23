@@ -18,17 +18,20 @@ export default function Ssgagent() {
             herotitle="Be Our Global Partner"
             imgsrc="https://c0.wallpaperflare.com/preview/534/41/125/school-books-young-adult-education.jpg"
             imgalt="hero image"
-            btnlink='/Home' //input link here to redirect to a page
+            btnlink="/Home" //input link here to redirect to a page
           />
-          
         </div>
-        <h1 className='Card'> 
-          <h1 className='buttonContainer'>
-            {<Button buttonStyle='btn--inCard' buttonLink="/Login"> <i class="fas fa-search"></i> Search Agent</Button>}
+        <h1 className="Card">
+          <h1 className="buttonContainer">
+            {
+              <Button buttonStyle="btn--inCard" buttonLink="/Login">
+                {" "}
+                <i class="fas fa-search"></i> Search Agent
+              </Button>
+            }
           </h1>
-         
         </h1>
-        <span className="top-sec">
+        {/* <span className="top-sec">
           <div className="text1">
             <h1>Why Join Us?</h1>
             <p>
@@ -74,13 +77,18 @@ export default function Ssgagent() {
               alt="Study img"
             />
           </div>
-        </span>
+        </span> */}
       </section>
       <div className="agentformlabel">
         <h1>Growing With Sunway Study Group</h1>
       </div>
       <section id="form" className="form-container">
-        <div className="agent">
+        {!isSubmitted ? (
+          <Applyagent submitForm={submitForm} />
+        ) : (
+          <FormSuccess />
+        )}
+        {/* <div className="agent">
           <h1>Individual Agent</h1>
           <h2>Who is Individual Agent?</h2>
           <p>
@@ -110,11 +118,6 @@ export default function Ssgagent() {
             profit by paying us certain service fee.
           </p>
         </div>
-        {!isSubmitted ? (
-          <Applyagent submitForm={submitForm} />
-        ) : (
-          <FormSuccess />
-        )}
         <div className="agent">
           <h1>Business Agent</h1>
           <h2>Who is Individual Agent?</h2>
@@ -144,9 +147,9 @@ export default function Ssgagent() {
             your students on Application, Admission , Scholarship and earn your
             profit by paying us certain service fee.
           </p>
-        </div>
+        </div> */}
       </section>
-      <section className="bottomtext">
+      {/* <section className="bottomtext">
         <h1>Simple Ways to Work With us as a Partner</h1>
         <h2>Be SSG Agent </h2>
         <p1>
@@ -184,7 +187,7 @@ export default function Ssgagent() {
           Letter + JW form by courier which need to submit embassy to obtain
           chinese student visa.
         </p1>
-      </section>
+      </section> */}
     </>
   );
 }

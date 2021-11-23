@@ -63,6 +63,51 @@ const Applyagent = ({ submitForm }) => {
           {error.address && <p>{error.address}</p>}
         </div>
         <div className="form-inputs">
+          <label htmlFor="postcode" className="form-label">
+            Postcode / Zip Code
+          </label>
+          <input
+            id="postcode"
+            type="text"
+            name="postcode"
+            className="form-input"
+            placeholder="Enter Your Postcode"
+            value={values.postcode}
+            onChange={handleChange}
+          />
+          {error.postcode && <p>{error.postcode}</p>}
+        </div>
+        <div className="form-inputs">
+          <label htmlFor="state" className="form-label">
+            State
+          </label>
+          <input
+            id="state"
+            type="text"
+            name="state"
+            className="form-input"
+            placeholder="Enter Your State"
+            value={values.state}
+            onChange={handleChange}
+          />
+          {error.state && <p>{error.state}</p>}
+        </div>
+        <div className="form-inputs">
+          <label htmlFor="area" className="form-label">
+            Area
+          </label>
+          <input
+            id="area"
+            type="text"
+            name="area"
+            className="form-input"
+            placeholder="Enter Your Area"
+            value={values.area}
+            onChange={handleChange}
+          />
+          {error.area && <p>{error.area}</p>}
+        </div>
+        <div className="form-inputs">
           <label htmlFor="agenttype" className="form-label">
             Agent Type
           </label>
@@ -74,8 +119,9 @@ const Applyagent = ({ submitForm }) => {
             value={values.agenttype}
             onChange={handleChange}
           >
-            <option value="individualagent">Individual Agent</option>
-            <option value="personalagent">Business Agent</option>
+            <option value="individualagent-native">Individual Agent - Native</option>
+            <option value="buninessagent-native">Business Agent - Native</option>
+            <option value="buninessagent-gobal">Business Agent - Global</option>
           </select>
         </div>
         <div className="form-inputs">
@@ -100,15 +146,15 @@ const Applyagent = ({ submitForm }) => {
           </select>
         </div>
         <div className="form-inputs">
-          <label htmlFor="nationality" className="form-label">
-            Your Nationality
+          <label htmlFor="country" className="form-label">
+            Country
           </label>
           <select
-            id="nationality"
-            type="nationality"
-            name="nationality"
+            id="country"
+            type="country"
+            name="country"
             className="form-input"
-            value={values.nationality}
+            value={values.country}
             onChange={handleChange}
           >
             <option value="">-- select one --</option>
@@ -307,21 +353,7 @@ const Applyagent = ({ submitForm }) => {
             <option value="zambian">Zambian</option>
             <option value="zimbabwean">Zimbabwean</option>
           </select>
-          {error.nationality && <p>{error.nationality}</p>}
-        </div>
-        <div className="form-inputs">
-          <label htmlFor="dateofbirth" className="form-label">
-            Date of Birth
-          </label>
-          <input
-            id="dateofbirth"
-            type="date"
-            name="dateofbirth"
-            className="form-input"
-            value={values.datofbirth}
-            onChange={handleChange}
-          />
-          {error.dateofbirth && <p>{error.dateofbirth}</p>}
+          {error.country && <p>{error.country}</p>}
         </div>
         <div className="form-inputs">
           <label htmlFor="email" className="form-label">
@@ -337,6 +369,20 @@ const Applyagent = ({ submitForm }) => {
             onChange={handleChange}
           />
           {error.email && <p>{error.email}</p>}
+        </div>
+        <div className="form-inputs">
+          <label htmlFor="whatsappno" className="form-label">
+            Whatsapp Number
+          </label>
+          <input
+            id="whatsappno"
+            type="text"
+            name="whatsappno"
+            className="form-input"
+            value={values.whatsappno}
+            onChange={handleChange}
+          />
+          {error.whatsappno && <p>{error.whatsappno}</p>}
         </div>
         <div className="form-inputs">
           <label htmlFor="phoneno" className="form-label">

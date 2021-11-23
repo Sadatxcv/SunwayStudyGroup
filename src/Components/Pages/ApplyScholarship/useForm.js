@@ -6,14 +6,14 @@ const useForm = (callback, validate) => {
     gender: "",
     degreeObtained: "",
     englishProficiency: "",
-    bachelors: "",
-    masters: "",
     avgGrade: "",
     studyBudget: "",
     nationality: "",
     dateofbirth: "",
     email: "",
     phoneno: "",
+    levelofstudy: "",
+    fieldofstudy: "",
   });
   const [error, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);

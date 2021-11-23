@@ -12,7 +12,6 @@ function University() {
             imgsrc='img/home.jpg'
             herotitle='Lists of Universities'
         />
-        
         {/* <div className='cards'>
         <h1 className='orangeheader'>
             <i class="fas fa-info-circle"></i> About Us 

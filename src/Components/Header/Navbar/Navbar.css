@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -24,19 +24,19 @@
 
 .navbar-logo {
   color: #fff;
-  justify-self: start;
+  justify-self: end;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
+  /* font-size: 4rem; */
   display: flex;
   text-align: center;
   align-items: center;
-  height: 60px;
+  height: 80px;
 }
 
 .fa-typo3 {
   margin-left: 0.5rem;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 
 .nav-menu {
@@ -50,8 +50,8 @@
   /* margin-right: 10rem; */
 }
 .logo{
-  height: 3vw;
-  align-items: center;
+  height: 80px;
+  align-items: left;
   position: relative;
   /* display: flex; */
   /* position: relative; */

@@ -66,12 +66,11 @@ function Navbar() {
             <TextScroller text="Long long text to scroll" />
       </div> */}
       <nav className='navbar'>
-        
         <div className='navbar-container'>
           <ul>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
               
-              <img className='logo' src="/img\logo.jpg" alt='logo'/>
+              <img className='logo' src="\img\logo.jpg" alt='logo'/>
             </Link>
           </ul>
           <ul>
@@ -145,7 +144,7 @@ function Navbar() {
               onMouseLeave={applyOnMouseLeave}
             >
               <Link
-                to='/products'
+                to='/Application'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -154,7 +153,7 @@ function Navbar() {
               {applyDropdown && <ApplyDropdown />}
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline' buttonLink="/Login">SignIn</Button>}
+          {button && <Button buttonStyle='btn--outline' buttonLink="/Login">SignUp</Button>}
         </div>
       </nav>
     </>

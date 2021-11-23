@@ -1,7 +1,7 @@
 export const MenuItemsForApply = [
   {
     title: 'Admission',
-    path: '/marketing',
+    path: '/Application',
     cName: 'dropdown-link'
   },
   {

@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import ApplicationForm from './ApplicationForm'
-import FormSuccess from "./FormSuccess";
+import AdmissionFormSuccess from "./AdmissionFormSuccess";
 import "./Application.css"
 
-export default function Application() {
+function Application() {
     const [isSubmitted, setIsSubmitted] = useState(false);
 
     function submitForm() {
@@ -17,9 +17,10 @@ export default function Application() {
           {!isSubmitted ? (
             <ApplicationForm submitForm={submitForm} />
           ) : (
-            <FormSuccess />
+            <AdmissionFormSuccess />
           )}
         </div>
       </>
     );
 }
+export default Application;

@@ -8,7 +8,10 @@ function Home() {
     <>
       <HeroSection
       videosrc='video/video-2.mp4'
-      herotitle='Win The Best'/>
+      herotitle='World Wide Education'
+      btnlink="/Application"
+      />
+      
       <Cards/>
       
     </>

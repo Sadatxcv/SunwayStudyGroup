@@ -1,4 +1,4 @@
-export default function validateinfo(values) {
+export default function LogInValidateinfo(values) {
   let error = {};
 
   if (values.group === "") {

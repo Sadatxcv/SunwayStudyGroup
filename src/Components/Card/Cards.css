@@ -141,10 +141,13 @@ h1 {
   padding: 2rem;
   padding-left: 4rem;
   padding-right: 4rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   font-weight:100px;
   align-content: center;
   align-items: center;
   
+}
+.list{
+  text-align: left;
 }
