@@ -153,7 +153,7 @@ function Navbar() {
               {applyDropdown && <ApplyDropdown />}
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline' buttonLink="/Login">SignUp</Button>}
+          {button && <Button buttonStyle='btn--outline' buttonLink="/Login">Login</Button>}
         </div>
       </nav>
     </>

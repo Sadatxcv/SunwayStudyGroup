@@ -11,6 +11,7 @@ import Blog from './Components/Pages/Blog/Blog';
 import ApplyScholarship from './Components/Pages/ApplyScholarship/ApplyScholarship';
 import Login from './Components/Pages/Login/Login'
 import Application from './Components/Pages/ApplicationForm/Application';
+import signup from './Components/Pages/Login/signup';
 function App() {
   return (
     <>
@@ -25,6 +26,7 @@ function App() {
           <Route path= '/Scholarship' component={ApplyScholarship}/>
           <Route Path='/Login' component={Login}/>
           <Route Path= '/Application' component={Application}/>
+          {/* <Route Path="/Signup" component={signup}/> */}
 
         </Switch>
         <Footer/>

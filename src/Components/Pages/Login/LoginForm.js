@@ -2,6 +2,8 @@ import React from "react";
 import "./Login.css";
 import validate from "./validateinfo";
 import LogInUseForm from "./LogInUseForm";
+import signup from "./signup";
+import { Link } from 'react-router-dom';
 
 const LoginForm = ({ submitForm }) => {
   const { handleChange, handleSubmit, values, error } = LogInUseForm(
@@ -13,7 +15,9 @@ const LoginForm = ({ submitForm }) => {
     <div className="form-content-login">
       <form className="form-login" onSubmit={handleSubmit}>
         <h1>
-          Fill out the login information to Sign in.
+          Fill out the login information to Login.
+          if you dont have an account, create one at <Link to="/signup"
+          onClick={signup} >dfs</Link>
         </h1>
         <div className="form-inputs-login">
           <label htmlFor="group" className="form-label-login">
@@ -29,6 +33,7 @@ const LoginForm = ({ submitForm }) => {
             <option value=""></option>
             <option value="Admin">Admin</option>
             <option value="Agent">Agent</option>
+            <option value="User">User</option>
           </select>
           {error.group && <p>{error.group}</p>}
         </div>
