@@ -1,12 +1,12 @@
 import React from "react";
 import "./Login.css";
 import validate from "./validateinfo";
-import LogInUseForm from "./LogInUseForm";
-import signup from "./signup";
-import { Link } from 'react-router-dom';
+import useForm from "./useForm";
+import signup from "./Signup";
+import { Link } from "react-router-dom";
 
 const LoginForm = ({ submitForm }) => {
-  const { handleChange, handleSubmit, values, error } = LogInUseForm(
+  const { handleChange, handleSubmit, values, error } = useForm(
     submitForm,
     validate
   );
@@ -15,9 +15,11 @@ const LoginForm = ({ submitForm }) => {
     <div className="form-content-login">
       <form className="form-login" onSubmit={handleSubmit}>
         <h1>
-          Fill out the login information to Login.
-          if you dont have an account, create one at <Link to="/signup"
-          onClick={signup} >dfs</Link>
+          Fill out the login information to Login. if you dont have an account,
+          create one at{" "}
+          <Link to="/Signup">
+            Sign up
+          </Link>
         </h1>
         <div className="form-inputs-login">
           <label htmlFor="group" className="form-label-login">
@@ -29,7 +31,8 @@ const LoginForm = ({ submitForm }) => {
             name="group"
             className="form-input-login"
             value={values.loginType}
-            onChange={handleChange} >
+            onChange={handleChange}
+          >
             <option value=""></option>
             <option value="Admin">Admin</option>
             <option value="Agent">Agent</option>
