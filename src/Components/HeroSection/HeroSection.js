@@ -16,9 +16,17 @@ function HeroSection(props) {
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
-            buttonLink={props.btnlink}
+            buttonLink={props.btnlink1}
           >
             Apply Now
+          </Button>
+          <Button
+            className="btns"
+            buttonStyle="btn--outline"
+            buttonSize="btn--large"
+            buttonLink={props.btnlink2}
+          >
+            Learn More
           </Button>
         </div>
       </div>

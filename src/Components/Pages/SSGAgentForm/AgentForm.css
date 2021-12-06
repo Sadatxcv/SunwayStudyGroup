@@ -11,10 +11,10 @@
 }
 .form-container {
   margin: 100px auto;
-  width: 90%;
+  width: 70%;
   border-radius: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .form-success {
@@ -215,4 +215,11 @@
   .top-img {
     padding-top: 0rem;
   }
+}
+.agent p{
+  font-size: 1.1rem;
+  text-align: justify;
+}
+.agent h2{
+  font-size: 1.7rem;
 }

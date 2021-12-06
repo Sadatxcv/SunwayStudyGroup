@@ -1,0 +1,26 @@
+.orangeheader {
+  background: rgb(240, 170, 57);
+  padding: 0.3rem;
+  color: #fff;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+}
+.detailsPara {
+  padding: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: 100px;
+  align-content: center;
+  align-items: center;
+}
+.container {
+  margin-top: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+.list{
+    text-align: left;
+}

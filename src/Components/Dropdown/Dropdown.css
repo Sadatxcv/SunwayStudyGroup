@@ -1,8 +1,9 @@
 .dropdown-menu {
-  background:rgb(240, 170, 57);
+  /* background:rgb(240, 170, 57); */
+  background:rgb(190, 88, 3);
   width: 200px;
   position: absolute;
-  top: 3.5rem;
+  top: 4rem;
   list-style: none;
   text-align: start;
 }
@@ -14,6 +15,7 @@
 
 .dropdown-menu li:hover {
   background: rgb(0, 0, 0)cabff;
+  color: #000;
 }
 
 .dropdown-menu.clicked {
@@ -27,6 +29,10 @@
   text-decoration: none;
   color: #fff;
   padding: 16px;
+}
+.dropdown-link :hover {
+  color: black;
+  transition: all 0.1s ease-out;
 }
 
 @media screen and (max-width: 960px) {

@@ -1,19 +1,33 @@
 .navbar {
-  background: rgb(240, 170, 57);
+  background: rgb(0, 0, 0);
   height: 80px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: start; */
   align-items: center;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
+  font-size: 130%;
   position: sticky;
   top: 0;
   z-index: 999;
 }
 
+.nav-menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-gap: 10px;
+  list-style: none;
+  align-items: end;
+  /* width: 1106px; */
+  width:69rem;
+  /* justify-content: end; */
+  /* margin-right: 10rem; */
+}
 .navbar-container {
   display: grid;
-  grid-template-columns: repeat(10, auto);
+  grid-template-columns: repeat(4, auto);
   grid-gap: 1px;
   list-style: none;
   justify-content: center;
@@ -27,7 +41,7 @@
   justify-self: end;
   cursor: pointer;
   text-decoration: none;
-  /* font-size: 4rem; */
+  font-size: 4rem;
   display: flex;
   text-align: center;
   align-items: center;
@@ -39,16 +53,7 @@
   font-size: 1.2rem;
 }
 
-.nav-menu {
-  display: grid;
-  grid-template-columns: repeat(9, auto);
-  grid-gap: 10px;
-  list-style: none;
-  text-align: center;
-  width: 60vw;
-  justify-content: end;
-  /* margin-right: 10rem; */
-}
+
 .logo{
   height: 80px;
   align-items: left;
@@ -70,7 +75,7 @@
 }
 
 .nav-links:hover {
-  color: black;
+  color: rgb(247, 123, 7);
   transition: all 0.1s ease-out;
 }
 

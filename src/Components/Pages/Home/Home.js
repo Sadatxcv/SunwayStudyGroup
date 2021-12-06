@@ -8,7 +8,7 @@ function Home() {
     <>
       <HeroSection
       videosrc='video/video-2.mp4'
-      herotitle='World Wide Education'
+      herotitle='World Wide Admission'
       btnlink="/Application"
       />
       
